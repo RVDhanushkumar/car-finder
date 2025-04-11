@@ -30,7 +30,7 @@ export default function Home() {
     const getData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("http://localhost:3000/api/cardetails");
+        const res = await axios.get("https://car-finder-eight-pi.vercel.app/api/cardetails");
         setAlldata(res.data);
         setErr("");
       } catch (err) {
